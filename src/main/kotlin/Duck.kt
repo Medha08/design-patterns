@@ -1,4 +1,5 @@
-abstract class Duck(private val flyBehaviour: FlyBehaviour, private val quackBehaviour: QuackBehaviour) {
+abstract class Duck(private var flyBehaviour: FlyBehaviour, private val quackBehaviour: QuackBehaviour) {
+
 
     abstract fun display()
     fun performFly(){
@@ -8,6 +9,11 @@ abstract class Duck(private val flyBehaviour: FlyBehaviour, private val quackBeh
 
     fun performQuack(){
         quackBehaviour.makeSound()
+    }
+
+    //dynamically set behaviour during runtime
+    fun setFlyBehaviour(flyBehaviourRunTime: FlyBehaviour){
+        flyBehaviour = flyBehaviourRunTime
     }
 
 }
