@@ -36,4 +36,11 @@ fun main(){
     device.display()
     device.mimicSound()
 
+    // Final Notes
+//    This is STRATEGY PATTERN
+//    defines a family of algorithms[FlyBehaviour,QuackBehaviour],
+//    encapsulates each one(all behaviours in one ) and
+//    make then interchangeable(can be assigned on run time with set function),
+//    Strategy lets the algorithm(fly or quack behaviour vary independently of Client that use it - Duck or device)
+
 }
