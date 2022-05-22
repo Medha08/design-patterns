@@ -29,4 +29,11 @@ fun main(){
     rock.setFlyBehaviour(NoFly())
     rock.performFly()
 
+    println("---------------------------------------")
+    //A hunter uses device to mimic Quack - No Duck inherited
+    //Reused algorithm of Quack
+    val device = Device(QuackSound())
+    device.display()
+    device.mimicSound()
+
 }
