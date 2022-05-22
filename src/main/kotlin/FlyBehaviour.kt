@@ -14,5 +14,10 @@ class NoFly: FlyBehaviour{
     override fun fly() {
         println("we don't fly")
     }
+}
 
+class RocketFly: FlyBehaviour {
+    override fun fly() {
+        println("I fly like a rocket")
+    }
 }

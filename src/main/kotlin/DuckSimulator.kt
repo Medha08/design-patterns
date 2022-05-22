@@ -10,4 +10,12 @@ fun main(){
     rub.performFly()
     rub.performQuack()
     rub.display()
+
+
+    println("---------------------------------------")
+
+    val rock = RocketDuck()
+    rock.performFly()
+    rock.performQuack()
+    rock.display()
 }
