@@ -1,4 +1,6 @@
 //separated out varying concerns to handle separately
+//Encapsulated Fly Behaviour
+//Family of Algos
 interface FlyBehaviour {
    fun fly()
 }

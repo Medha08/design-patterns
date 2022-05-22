@@ -1,3 +1,5 @@
+//Encapsulated Quack Behaviour
+//Family of Algos
 interface QuackBehaviour {
     fun makeSound()
 }
