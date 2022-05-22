@@ -1,5 +1,5 @@
 fun main(){
-    val mal = MallordDuck()
+    val mal = MallordDuck(FlyWithWings(),QuackSound())
     mal.display()
     mal.performFly()
     mal.performQuack()
@@ -7,7 +7,11 @@ fun main(){
 
     println("---------------------------------------")
 
-    val rub = RubberDuck()
+    //RubberDuck now has no concrete implementation of behaviour and is assigned during run time
+
+    //can create a rubber duck that can fly !!!
+
+    val rub = RubberDuck(NoFly(),SqueakSound())
     rub.display()
     rub.performFly()
     rub.performQuack()
@@ -16,7 +20,7 @@ fun main(){
 
     println("---------------------------------------")
 
-    val rock = RocketDuck()
+    val rock = RocketDuck(RocketFly(),NoSound())
     rock.display()
     rock.performFly()
     rock.performQuack()
