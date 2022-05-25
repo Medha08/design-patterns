@@ -18,7 +18,7 @@ class WeatherData(private val listOfObservers:MutableList<Observer>):Subject{
         listOfObservers.remove(observer)
     }
 
-    fun measurementsChanged(){
+    private fun measurementsChanged(){
         notifyObservers()
     }
 
