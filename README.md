@@ -1,4 +1,4 @@
 # Design-patterns
 
-1. Strategy Pattern [ Done ]
-2. Observer Pattern [ Done ]
+1. Strategy Pattern 
+2. Observer Pattern 
