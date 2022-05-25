@@ -1,3 +1,5 @@
+package weathersystem
+
 class HeatIndexDisplay : Observer, DisplayElement {
     var temperature = 0F
     var humidity = 0F

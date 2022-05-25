@@ -1,4 +1,6 @@
-class ForecastDisplay:Observer,DisplayElement {
+package weathersystem
+
+class StaticsDisplay: Observer, DisplayElement {
     private var temperature = 0F
     private var humidity = 0F
     private var pressure = 0F
@@ -9,7 +11,7 @@ class ForecastDisplay:Observer,DisplayElement {
     }
 
     override fun display() {
-        println("I am a Forecast Display")
+        println("I am a Statics Display")
         println("Temp: $temperature")
         println("Humidity: $humidity")
         println("Pressure: $pressure")

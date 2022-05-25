@@ -1,5 +1,5 @@
-
-class WeatherData(private val listOfObservers:MutableList<Observer>):Subject{
+package weathersystem
+class WeatherData(private val listOfObservers:MutableList<Observer>): Subject {
     private var temperature:Float = 0.0f
     private var pressure:Float = 0.0f
     private var humidity:Float = 0.0f

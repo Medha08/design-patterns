@@ -1,4 +1,4 @@
-//Observer Pattern
+package weathersystem//`weather-system`.Observer Pattern
 //defines one to many dependency btw objects so that when one object changes state, all its dependant objects are notified and updated automatically
 
 fun main(){
