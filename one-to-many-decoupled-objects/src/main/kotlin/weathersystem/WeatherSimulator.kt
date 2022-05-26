@@ -4,17 +4,17 @@ package weathersystem
 
 fun main(){
 
-    val weatherDataSimulator = WeatherData(mutableListOf())
+    val weatherDataSubject = WeatherData(mutableListOf())
 
-    val currentConditionsDisplay = CurrentConditionsDisplay()
-    val staticsDisplay = StaticsDisplay()
-    val forecastDisplay = ForecastDisplay()
-    val heatIndexDisplay = HeatIndexDisplay()
+    val currentConditionsDisplay = CurrentConditionsDisplay(weatherDataSubject)
+    val staticsDisplay = StaticsDisplay(weatherDataSubject)
+    val forecastDisplay = ForecastDisplay(weatherDataSubject)
+    val heatIndexDisplay = HeatIndexDisplay(weatherDataSubject)
 
-    weatherDataSimulator.registerObserver(currentConditionsDisplay)
-    weatherDataSimulator.registerObserver(forecastDisplay)
+    weatherDataSubject.registerObserver(currentConditionsDisplay)
+    weatherDataSubject.registerObserver(forecastDisplay)
 
-    weatherDataSimulator.setMeasurements(2.3F,23F,34F)
+    weatherDataSubject.setMeasurements(2.3F,23F,34F)
 
     println("--------------Current & Forecast are only observers-------------------------")
 
@@ -24,10 +24,10 @@ fun main(){
 
     println("-----------------Current unregisters while statics registers----------------------")
 
-    weatherDataSimulator.unregisterObserver(currentConditionsDisplay)
-    weatherDataSimulator.registerObserver(staticsDisplay)
+    weatherDataSubject.unregisterObserver(currentConditionsDisplay)
+    weatherDataSubject.registerObserver(staticsDisplay)
 
-    weatherDataSimulator.setMeasurements(3.4F,45F,33F)
+    weatherDataSubject.setMeasurements(3.4F,45F,33F)
 
 
     println("---------------Forecast & Static are only observers ------------------------")
@@ -38,8 +38,8 @@ fun main(){
 
     println("--------------HeatIndex registers as well -------------------------")
 
-    weatherDataSimulator.registerObserver(heatIndexDisplay)
-    weatherDataSimulator.setMeasurements(20F,10F,4F)
+    weatherDataSubject.registerObserver(heatIndexDisplay)
+    weatherDataSubject.setMeasurements(20F,10F,4F)
 
     println("--------------HeatIndex & Forecast & Static are now observers -------------------------")
 

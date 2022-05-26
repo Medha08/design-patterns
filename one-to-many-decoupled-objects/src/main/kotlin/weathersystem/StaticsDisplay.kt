@@ -1,19 +1,17 @@
 package weathersystem
 
-class StaticsDisplay: Observer, DisplayElement {
+class StaticsDisplay(val weatherData: WeatherData): Observer, DisplayElement {
     private var temperature = 0F
-    private var humidity = 0F
     private var pressure = 0F
-    override fun update(temperature: Float, humidity: Float, pressure: Float) {
-        this.temperature = temperature
-        this.humidity = humidity
-        this.pressure = pressure
+
+    override fun update() {
+        this.temperature = weatherData.temperature
+        this.pressure = weatherData.pressure
     }
 
     override fun display() {
         println("I am a Statics Display")
         println("Temp: $temperature")
-        println("Humidity: $humidity")
         println("Pressure: $pressure")
     }
 }

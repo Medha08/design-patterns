@@ -1,8 +1,8 @@
 package weathersystem
 class WeatherData(private val listOfObservers:MutableList<Observer>): Subject {
-    private var temperature:Float = 0.0f
-    private var pressure:Float = 0.0f
-    private var humidity:Float = 0.0f
+     var temperature:Float = 0.0f
+     var pressure:Float = 0.0f
+     var humidity:Float = 0.0f
 
     override fun registerObserver(observer: Observer) {
         listOfObservers.add(observer)
@@ -10,7 +10,7 @@ class WeatherData(private val listOfObservers:MutableList<Observer>): Subject {
 
     override fun notifyObservers() {
         listOfObservers.forEach { observer ->
-            observer.update(temperature,pressure,humidity)
+            observer.update()
         }
     }
 

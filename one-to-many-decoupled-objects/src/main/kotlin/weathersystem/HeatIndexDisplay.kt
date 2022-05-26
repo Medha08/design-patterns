@@ -1,15 +1,15 @@
 package weathersystem
 
-class HeatIndexDisplay : Observer, DisplayElement {
+class HeatIndexDisplay(private val weatherData: WeatherData) : Observer, DisplayElement {
     var temperature = 0F
     var humidity = 0F
     var pressure = 0F
     var heatIndex = 0F
 
-    override fun update(temperature: Float, humidity: Float, pressure: Float) {
-        this.temperature = temperature
-        this.humidity = humidity
-        this.pressure = pressure
+    override fun update() {
+        this.temperature = weatherData.temperature
+        this.humidity = weatherData.temperature
+        this.pressure = weatherData.temperature
         this.heatIndex = temperature+pressure
     }
 
