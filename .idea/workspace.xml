@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="412cb347-af37-44a5-b63b-fa9681fdf2bd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/head-first-design-patterns.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/KotlinJavaRuntime.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/one-to-many-decoupled-objects/src/main/kotlin/DisplayElement.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/one-to-many-decoupled-objects/src/main/kotlin/Observer.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/one-to-many-decoupled-objects/src/main/kotlin/Subject.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/one-to-many-decoupled-objects/src/main/kotlin/weathersystem/WeatherSimulator.kt" beforeDir="false" afterPath="$PROJECT_DIR$/one-to-many-decoupled-objects/src/main/kotlin/weathersystem/WeatherSimulator.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +16,29 @@
   </component>
   <component name="CodeStyleSettingsInfer">
     <option name="done" value="true" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/one-to-many-decoupled-objects">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/one-to-many-decoupled-objects/gradle">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/program-to-interface">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -38,9 +60,19 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Kotlin.SwingObserverKt">
+    <configuration name="DuckSimulatorKt (1)" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DuckSimulatorKt" />
+      <module name="program-to-interface.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DuckSimulatorKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="DuckSimulatorKt" />
       <module name="head-first-design-patterns" />
@@ -48,8 +80,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SwingObserverKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lifechanging.SwingObserverKt" />
+      <module name="one-to-many-decoupled-objects.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WeatherSimulatorKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="weathersystem.WeatherSimulatorKt" />
+      <module name="one-to-many-decoupled-objects.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.SwingObserverKt" />
+        <item itemvalue="Kotlin.WeatherSimulatorKt" />
+        <item itemvalue="Kotlin.DuckSimulatorKt (1)" />
         <item itemvalue="Kotlin.DuckSimulatorKt" />
       </list>
     </recent_temporary>
