@@ -1,3 +1,6 @@
+// One instance only
+// Globally accessible
+// Logging,Caching, Thread Pool, DB Connections
 object Singleton{
     init{
         println("Hello there I am a Singleton")
